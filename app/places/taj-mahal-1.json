@@ -1,0 +1,59 @@
+{
+    "id": 1001,
+    "name": "Taj Mahal",
+    "description": {
+        "title": "Inspiration",
+        "para": "The Taj Mahal was commissioned by Shah Jahan in 1631, to be built in the memory of his wife Mumtaz Mahal, a Persian princess who died giving birth to their 14th child, Gauhara Begum.[5] Construction of the Taj Mahal began in 1632.[6] The imperial court documenting Shah Jahan's grief after the death of Mumtaz Mahal illustrate the love story held as the inspiration for Taj Mahal.[7][8] The principal mausoleum was completed in 1643[6] and the surrounding buildings and garden were finished about five years later."
+    },
+    "image": "",
+    "interestingFeature": [
+        {
+            "code": 1,
+            "name": "Main Gate",
+            "description": "Un inmenso mausoleo de mármol blanco, construido en Agra entre 1631 y 1648 por orden del emperador mogol Shah Jahan en memoria de su esposa favorita, el Taj Mahal es la joya del arte musulmán en la India y una de las obras maestras universalmente admiradas del mundo de patrimonio.",
+            "references": [
+                "http://www.google.com",
+                "http://www.yahoo.com"
+            ],
+            "rating":[
+                {
+                    "stars": 5,
+                    "review":"Awesome place, must visit"
+                },
+                {
+                    "stars": 3,
+                    "review":"Needs improvement."
+                },
+                {
+                    "stars": 4,
+                    "review":"Place not maintained very well."
+                }
+
+            ]
+
+        },
+        {
+            "code": 2,
+            "name": "Entry Gate",
+            "description": "This is the entry gate entry",
+            "references": [
+                "http://www.google.com",
+                "http://www.yahoo.com"
+            ],
+            "rating":[
+                {
+                    "stars": 5,
+                    "review":"Awesome place, must visit"
+                },
+                {
+                    "stars": 3,
+                    "review":"Needs improvement."
+                },
+                {
+                    "stars": 4,
+                    "review":"Place not maintained very well."
+                }
+                ]
+        }
+    ]
+}

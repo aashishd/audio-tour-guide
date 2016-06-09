@@ -1,0 +1,22 @@
+{
+  "name": "tour-guide",
+  "description": "A starter project for Angular",
+  "version": "0.0.1",
+  "homepage": "www.facebook.com/ashish.dhiman",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.5.x",
+    "angular-animate": "1.5.x",
+    "angular-mocks": "1.5.x",
+    "angular-resource": "1.5.x",
+    "angular-route": "1.5.x",
+    "bootstrap": "3.3.x",
+    "jquery": "2.2.x",
+    "pjTextToSpeech": "pjTextTospeech#^1.0.6",
+    "mobile-angular-ui": "^1.2.1"
+  },
+  "resolutions": {
+    "angular": "1.5.6"
+  }
+}

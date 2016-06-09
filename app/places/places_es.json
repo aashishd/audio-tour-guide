@@ -1,0 +1,27 @@
+[
+    {
+        "serial" : 0,
+        "construction": 1648,
+        "id": "taj-mahal-1",
+        "imageUrl": "static/images/places/taj-mahal-main.jpeg",
+        "name": "Taj Mahal",
+        "snippet": "An immense mausoleum of white marble, built in Agra between 1631 and 1648 by order of the Mughal emperor Shah Jahan in memory of his favourite wife, the Taj Mahal is the jewel of Muslim art in India and one of the universally admired masterpieces of the world's heritage."
+    },
+    {
+        "serial":1,
+        "construction": 1570,
+        "id": "humayun-tomb-delhi-1",
+        "imageUrl": "static/images/places/humyun-tomb-main.jpg",
+        "name": "Humayun's Tomb, Delhi",
+        "snippet": "This tomb, built in 1570, is of particular cultural significance as it was the first garden-tomb on the Indian subcontinent. It inspired several major architectural innovations, culminating in the construction of the Taj Mahal."
+    },
+    {
+        "serial":2,
+        "construction": 1732,
+        "id": "shanivar-vada-pune-1",
+        "imageUrl": "static/images/places/shaniwar-wada-main.jpg",
+        "name": "Shaniwar Wada, Pune",
+        "snippet": "Shaniwarwada is an 18th-century fortification in the city of Pune in Maharashtra, India. Built in 1732, it was the seat of the Peshwa rulers of the Maratha Empire until 1818, when the Peshwas lost control to the East India Company after the Third Anglo-Maratha War. Following the rise of the Maratha Empire, the palace became the center of Indian politics in the 18th century."
+    }
+
+]

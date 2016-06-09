@@ -1,0 +1,46 @@
+<!-- Sidebars -->
+        <div class='section'>
+            <ul class="nav nav-tabs" ng-repeat="feature in place.interestingFeature">
+                <li ui-class="{'active'}">
+                    <a ng-click="selectObject(feature)">{{feature.code}} : {{feature.name}}</a>
+                </li>
+            </ul>
+
+
+            <div ng-show="show">
+                <p>{{current.description}}</p>
+                <div id="speechTest">
+                    <p class="browser-support">Current Browser Support: Chrome Canary, Safari 7, Nightly Firefox</p>
+
+                        <button class="btn" ng-click="submitEntry()">{{"TALK" | translate}} {{current.name}}</button>
+
+
+                    <ul ng-repeat="ref in current.references">
+                        <li><a href="ref">{{ref}}</a></li>
+                    </ul>
+                    <h3 translate="REVIEW"></h3>
+                    <ul ng-repeat="rating in current.rating">
+                        <li>
+                            <p>{{rating.review}}</p>
+                        </li>
+                    </ul>
+
+                    <div class="row"><h3 translate="ADD_REVIEW"></h3><input type="text"/></div>
+
+
+                </div>
+                <!-- Talkback service -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a ng-click="start()"><i class="fa fa-microphone" aria-hidden="true" ng-show="stopped">Click here to start listening</i></a>
+                        <a ng-click="stop()"><i class="fa fa-microphone-slash" aria-hidden="true" ng-show="started">Click to stop listening</i></a>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+           </div>
+<div class="btn btn-block"><a href="#"> << Go Back </a> </div>

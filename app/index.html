@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en" ng-app="tourGuideApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Tour Guide by Here Maps</title>
+     <link rel="stylesheet" href="bower_components/mobile-angular-ui/dist/css/mobile-angular-ui-base.min.css" />
+      <link rel="stylesheet" href="bower_components/font-awesome.min.css" />
+    <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />-->
+    <link rel="stylesheet" href="app.css" />
+      <link rel="stylesheet" href="audio-guide/speech.css" />
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+      <!-- Text to speech -->
+    <script src="bower_components/pjTextToSpeech/pjTextToSpeech.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+
+
+
+      <!-- Text to speech -->
+      <script src="audio-guide/speechService.js"></script>
+      <script src="audio-guide/speechSynthesis.js"></script>
+
+      <!-- Core services module      -->
+      <script src="core/core.module.js"></script>
+      <script src="core/services/core.service.module.js"></script>
+      <script src="core/services/core.service.js"></script>
+
+
+      <!-- Place list module -->
+      <script src="place-list/place-list-module.js"></script>
+      <script src="place-list/place-list-directive.js"></script>
+
+      <!-- Place navigation module -->
+      <script src="place-navigation/place-nav-module.js"></script>
+      <script src="place-navigation/place-nav-directive.js"></script>
+
+      <!-- Google maps API-->
+      <script src="bower_components/mobile-angular-ui/dist/js/mobile-angular-ui.min.js"></script>
+      <script src='bower_components/lodash/dist/lodash.min.js'></script>
+      <script src='bower_components/angular-simple-logger/dist/angular-simple-logger.min.js'></script>
+      <script src='bower_components/angular-google-maps/dist/angular-google-maps.min.js'></script>
+      <script src="bower_components/ionic-rating/ionic-rating.min.js"></script>
+      <script src="bower_components/angular-translate/angular-translate.min.js"></script>
+      <script src="bower_components/annyang.min.js"></script>
+
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_77LM3vWoBed6iQAkl96-Ru14VbBUJpY" type="text/javascript"></script>
+
+
+
+
+
+
+
+  </head>
+  <body>
+
+  <!-- Sidebars -->
+  <div class="sidebar sidebar-left"><!-- ... --></div>
+  <div class="sidebar sidebar-right"><!-- ... --></div>
+
+  <div class="app">
+      <!-- -->
+      <div ng-controller="header">
+          <div class="navbar navbar-app">
+              <h1>Tour Guide</h1>
+              <div class="text-left">
+                  <a href="#"><h3 translate="HOME"></h3></a>
+              </div>
+              <div class="text-right">
+                  <label translate="LANG"></label>
+                  <select name="singleSelect" ng-model="selectedLang" ng-change="selectLanguage(this);">
+                      <option value="en">English</option>
+                      <option value="es">Spanish</option>
+                      <option value="fr">French</option>
+                  </select>
+              </div>
+          </div>
+       </div>
+      <!-- App body -->
+      <div class='app-body'>
+          <div class='app-content'>
+              <div class="scrollable">
+                  <div class="scrollable-content"><ng-view></ng-view></div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Modals and Overlays -->
+  <div ui-yield-to="modals"></div>
+      <div ng-view></div>
+  </body>
+</html>

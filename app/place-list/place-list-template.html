@@ -1,0 +1,46 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <!--Sidebar content-->
+
+      <p>
+        Search:
+        <input ng-model="query" />
+      </p>
+
+      <p>
+        Sort by:
+        <select ng-model="orderProp">
+          <option value="name">Alphabetical</option>
+          <option value="serial">Recently added</option>
+          <option value="construction">Date of Construction</option>
+        </select>
+      </p>
+
+    </div>
+    <div class="col-md-10">
+      <!--Body content-->
+
+        <div class="panel-group" ui-state="myAccordion" ui-default="$ctrl.phones[0]">
+
+            <div class="panel panel-default" ng-repeat="place in places | filter:query | orderBy:orderProp">
+                <div class="panel-heading" ui-set="{'myAccordion': place.id}">
+                    <a href="#!/places/{{place.id}}" class="thumb">
+                        <img ng-src="{{place.imageUrl}}" alt="{{place.name}}" />
+                    </a>
+                    <h4 class="panel-title">
+                        {{place.name}}
+                    </h4>
+                </div>
+                <div ui-if="myAccordion == {{place.id}}">
+                    <div class="panel-body">
+                        {{place.snippet}}
+                        <a ng-click="openPlace(place)">Visit Place</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  </div>
+</div>

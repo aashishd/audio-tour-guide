@@ -1,0 +1,28 @@
+/**
+ * Created by asdhiman on 6/7/16.
+ */
+
+#speechTest {
+    background: #efefef;
+    padding:0.5em 1em;
+    overflow:hidden;
+}
+
+#support {
+    color:red;
+}
+
+#support span {
+    color:#000;
+    margin-top:0.3em;
+}
+
+.browser-support {
+    color:#555;
+    font-size:0.7em;
+    margin-top:0;
+}
+
+.controls {
+    margin:0.8em 0;
+}
